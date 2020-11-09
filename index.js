@@ -32,11 +32,10 @@ const Calculator = {
 }
 
 function actionApplyer(int, array) {
-    let thing = int
 
     for (let i = 0; i < array.length; i++ ){
-        thing = array[i](thing)
+        int = array[i](int)
     }
     
-    return thing
+    return int
 }
